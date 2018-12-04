@@ -14,4 +14,12 @@ public class Calculator {
 		return value1 / value2;
 	}
 	
+	protected int summeProtected(int summand1, int summand2) {
+		return summand1 + summand2;
+	}
+
+	private int summePrivate(int summand1, int summand2) {
+		return summand1 + summand2;
+	}
+
 }
