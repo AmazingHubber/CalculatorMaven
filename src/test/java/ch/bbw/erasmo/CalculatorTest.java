@@ -23,20 +23,26 @@ public class CalculatorTest {
 		assertTrue(tester.differenz(25, 10) == 15);
 	}
 	
-	@Test
+	@Test(expected=ArithmeticException.class)
 	public void testDivisionNull() {
 		assertTrue(tester.division(0, 0) == 0);
 	}
 	
 	@Test
-	public void testDivision() {
+	public void testSummeUnexpectedException() {
+		assertTrue(tester.summe(10, 25) == 35);
+	}
+
+	
+	@Test
+	public void testDivisionIsOk() {
 		assertTrue(tester.division(4, 2) == 2);
 	}
 
 	
 	@Test
-	public void testDivisionUnexpected() {
-		assertTrue(tester.division(10, 10) == 10);
+	public void testDivision() throws Error{
+		assertTrue(tester.division(10, gugus) == 1);
 	}
 	
 	@Test
