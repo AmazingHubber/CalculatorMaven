@@ -24,12 +24,28 @@ public class CalculatorTest {
 	}
 	
 	@Test
-	public void testDivision() {
+	public void testDivisionNull() {
 		assertTrue(tester.division(0, 0) == 0);
 	}
 	
 	@Test
+	public void testDivision() {
+		assertTrue(tester.division(4, 2) == 2);
+	}
+
+	
+	@Test
 	public void testDivisionUnexpected() {
 		assertTrue(tester.division(10, 10) == 10);
+	}
+	
+	@Test
+	public void testSummeProtected() {
+		assertTrue(tester.summeProtected(10, 10) == 20);
+	}
+	
+	@Test
+	public void testSummePrivate() {
+		
 	}
 }
