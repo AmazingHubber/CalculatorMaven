@@ -148,10 +148,10 @@ public class CalculatorTest {
 		assertTrue(tester.division(4, 2) == 2);
 	}
 
-	@Test
-	public void testDivision() throws Error {
-		assertTrue(tester.division(10, gugus) == 1);
-	}
+//	@Test
+//	public void testDivision() throws Error {
+//		assertTrue(tester.division(10, gugus) == 1);
+//	}
 
 	@Test
 	public void testSummeProtected() {
