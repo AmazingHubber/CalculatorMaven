@@ -40,7 +40,7 @@ public class CalculatorTest {
 		assertTrue(tester.summe(0, 25) == 25);
 	}
 
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void testSummeMAX() {
 		assertTrue(tester.summe(Integer.MAX_VALUE, 25) == Integer.MAX_VALUE + 25);
 	}
@@ -86,12 +86,12 @@ public class CalculatorTest {
 		assertTrue(tester.differenz(Integer.MAX_VALUE, 25) == Integer.MAX_VALUE - 25);
 	}
 
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void testSubtraktionMIN() {
 		assertTrue(tester.differenz(Integer.MIN_VALUE, 25) == Integer.MIN_VALUE - 25);
 	}
 
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void testSubtraktionMinAndMax() {
 		assertTrue(tester.differenz(Integer.MAX_VALUE, Integer.MIN_VALUE) == Integer.MAX_VALUE - Integer.MIN_VALUE);
 	}
@@ -112,7 +112,7 @@ public class CalculatorTest {
 		assertTrue(tester.division((-10), (-2)) == 5);
 	}
 
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void testDivisionZeroDividedZero() {
 		assertTrue(tester.division(0, 0) == 0);
 	}
