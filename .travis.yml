@@ -12,8 +12,7 @@ deploy:
   provider: releases
   api_key:
     secure: lnpm+vO2+lbjZhDdqYV5u2UUVDAMUZqkn31PBTenyCEFA+6HhETs0azJSfkRUJX5CNO9B2aXul1GLWHZPtRZgTewWwozLjWkB1VyYn4r/lFzhjRzpSLeIz9IZDad3Ivif24t3080aGRsGFliJJEzO3iAE+9/TaGjhAHJ4jUk09r+1TVVPUzU1JzAREQGxSlr52eGX6+91wwZojxq+mkqS9/G7FpdQ124A9eTufh3Mr/aq0lII0Vo3FcWuLyTbgzxHJU5DlhlXkXq+QS8k1Lc7nVHP5p0bMTor7ze//4zpGcxzWiBogAa/iVaKuatFNz9NboeUKH6DLCpqPNamrWxwS+Mrp1UmjoMNY2yN+V9fBZPFpEhCyEJeJUwkiCnxqnhu9rqqI918x9Zvr/2Io9s3DQM/EcRm9UT9z+nlgZqjMwQAR1nLT4OyYs1RnMwUAM4ywUomQBh28D1kbzGhasVOj6aGF2IHgnrMfgeOtAmjoa004xXVKLg0K/8RbKPCcGj+tOGfAkm9l8LaS9Gq4aUiENX6Ew3cvPOYuYSLvqGsx0INHc1VUp/4tvqi/tBjyQeBg4Ygswv03OGDfTbHoiWYkkkmH2mwKs+OS8HvD6PQU16buheC72uiO+FD1m74dsrhqH0fqx0qcxkFbgRSdwkLVAz+TXLo0bbEkmZU1MdMbI=
-  file: "/home/travis/build/AmazingHubber/CalculatorMaven/target/CalculatorMaven-0.0.1-SNAPSHOT.jar
-    to /home/travis/.m2/repository/ch/bbw/erasmo/CalculatorMaven/0.0.1-SNAPSHOT/CalculatorMaven-0.0.1-SNAPSHOT.jar"
+  file: "/home/travis/.m2/repository/ch/bbw/erasmo/CalculatorMaven/0.0.1-SNAPSHOT/CalculatorMaven-0.0.1-SNAPSHOT.jar"
   skip_cleanup: true
 
   on:
